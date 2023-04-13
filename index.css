@@ -1,0 +1,131 @@
+/* reset css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,300;1,400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.register-container {
+    display: flex;
+}
+
+.register-container .register-container_desc {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-container .register-container_desc .register-container_desc-child h2 {
+    font-size: 3.125em;
+    font-weight: 800;
+}
+
+.register-container .register-container_desc .register-container_desc-child h4 {
+    font-size: 2.1875rem;
+    font-weight: 700;
+    margin-bottom: 53px;
+}
+
+
+.register-container .register-container_desc .register-container_desc-child p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Form */
+
+.register-container .register-container_form {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.register-container .register-container_form h3 {
+    font-size: 1.875em;
+    font-weight: 600;
+}
+
+.register-container .register-container_form form {
+    display: flex;
+    flex-direction: column;
+    width: 369px;
+    height: 470px;
+    justify-content: space-between;
+    margin-top: 28px;
+}
+
+.register-container .register-container_form form input {
+    height: 62px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 20px;
+    background-color: #f0efff;
+}
+
+.register-container .register-container_form form .input-icon {
+    position: relative;
+}
+
+.register-container .register-container_form form .input-icon input {
+    width: 100%;
+}
+
+.register-container .register-container_form form .input-icon::before {
+    content: url("./imgs/invisible\ 1.png");
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+}
+
+.register-container .register-container_form form input::placeholder {
+    color: #a7a3ff;
+}
+
+.register-container .register-container_form form input:nth-child(6) {
+    color: #fff;
+    background-color: #4d47c3;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.register-container .register-container_form p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #B5B5B5;
+    margin-top: 47px;
+}
+
+.register-container .register-container_form ul {
+    list-style: none;
+    display: flex;
+    margin-top: 43px;
+    width: 200px;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width : 600px) {
+    .register-container{
+        flex-direction: column;
+    }
+
+    .register-container .register-container_desc , 
+    .register-container .register-container_form{
+        width: 100%;
+    }
+
+    .register-container .register-container_desc {
+        height: auto;
+    }
+}
